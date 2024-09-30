@@ -15,11 +15,11 @@ The project is based on Remix and a minimal Playwright setup built for reproduci
 
 ### Expected behaviour
 
-When Playwright is run with --ignore-snapshots flag, expect(locator).toHaveScreenshot() is always ignored, as described in the docs.
+When Playwright is run with `--ignore-snapshots` flag, `expect(locator).toHaveScreenshot()` is always ignored, as described in the docs.
 
 ### Actual behavior
 
-Test fails on snapshot comparison when --ignore-snapshots flag is used together with --ui flag.
+Test fails on snapshot comparison when `--ignore-snapshots` flag is used together with `--ui` flag.
 
 ---
 
