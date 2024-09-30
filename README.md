@@ -9,9 +9,9 @@ The project is based on Remix and a minimal Playwright setup built for reproduci
 ## Steps to reproduce
 
 1. Clone this repo.
-2. Install dependencies with yarn 
-3. Run tests in CLI mode by executing: yarn test 
-4. Run the same tests in UI mode by executing: yarn test:ui
+2. Install dependencies with `yarn`
+3. Run tests in CLI mode by executing: `yarn test`
+4. Run the same tests in UI mode by executing: `yarn test:ui`
 
 ### Expected behaviour
 
