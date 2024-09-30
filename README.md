@@ -1,6 +1,29 @@
-# Welcome to Remix!
+# Playwright bug test
 
-- 📖 [Remix docs](https://remix.run/docs)
+This repository is a test project for reproducing bug 
+[#32868](https://github.com/microsoft/playwright/issues/32868)
+in Playwright project.
+
+The project is based on Remix and a minimal Playwright setup built for reproducing the bug. 
+
+## Steps to reproduce
+
+1. Clone this repo.
+2. Install dependencies with yarn 
+3. Run tests in CLI mode by executing: yarn test 
+4. Run the same tests in UI mode by executing: yarn test:ui
+
+### Expected behaviour
+
+When Playwright is run with --ignore-snapshots flag, expect(locator).toHaveScreenshot() is always ignored, as described in the docs.
+
+### Actual behavior
+
+Test fails on snapshot comparison when --ignore-snapshots flag is used together with --ui flag.
+
+---
+
+### The rest of this document refers to the project development in Remix.
 
 ## Development
 
